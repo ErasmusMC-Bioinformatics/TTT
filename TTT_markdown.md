@@ -1,12 +1,6 @@
-## R Markdown
+## TTT project
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+This is an R Markdown document of TTT project. See the details in the manuscript *The nasal microbiota in the development of a multi-parametric prediction model to differentiate bacterial versus viral infections in lower respiratory tract infections*
 
     # set working directory
     # setwd("D:/TTT") # set working directory
@@ -168,10 +162,13 @@ CCM\*: Classifiers using CRP and all input microbiota variables in the
 5-fold CV of the expanded cohort.
 
 1.The total cohort of 293 patients was randomly split into 5 subsets, or
-so called ‘folds’. 2.Since the two classes were unbalanced, the majority
+so called ‘folds’. 
+
+2.Since the two classes were unbalanced, the majority
 class label ‘viral infection’ was subsampled to reach equal prior
-probability as class ‘bacterial infection’ in each training set. 3.For
-each training fold, the 36 input features were ranked simultaneously
+probability as class ‘bacterial infection’ in each training set. 
+
+3.For each training fold, the 36 input features were ranked simultaneously
 according to their variable importance, as described above
 
     for (F in 1:5) {    #Fold
@@ -208,7 +205,9 @@ according to their variable importance, as described above
     ## [1] "Fold = 5"
 
 4.Sort the features in the training and test folds according to the VIMP
-in the corresponding training fold 5.Now load the sorted training folds
+in the corresponding training fold 
+
+5.Now load the sorted training folds
 and test folds to build CC\* and CEM\*
 
     results = c("Fold","Number of top features","AUC_train","Accuracy_bacterial_train","Accuracy_viral_train","AUC_test","Accuracy_bacterial_test","Accuracy_viral_test")
