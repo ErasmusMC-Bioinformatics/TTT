@@ -1,6 +1,6 @@
 ## TTT project
 
-This is an R Markdown document of TTT project. See the details in the manuscript *The nasal microbiota in the development of a multi-parametric prediction model to differentiate bacterial versus viral infections in lower respiratory tract infections*
+This is an R Markdown document of TTT project. See all the details of this project in the manuscript *The nasal microbiota in the development of a multi-parametric prediction model to differentiate bacterial versus viral infections in lower respiratory tract infections*.
 
     # set working directory
     # setwd("D:/TTT") # set working directory
